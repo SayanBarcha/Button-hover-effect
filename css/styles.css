@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color: indigo;*/
+    background: url(../img/CUKAq0.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #6c4ba5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+a span:nth-child(2){
+    color: #6c4ba5;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.5s;
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 54% 100%, 36% 51%);
+}
+a span:nth-child(2):hover{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 51%);
+}
+a span:nth-child(1):hover ~ span:nth-child(2){
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
